@@ -1,10 +1,14 @@
-function multiply(num) {
-  const str = num.toString();
-  const numArr = str.split('');
-  let sum = 1;
-  for(let i= 0; i < numArr.length; i++) {
-    sum = sum * numArr[i];
-  }
+use strict;
 
+let arrRus = ['понедельник, вторник, среда, четверг, пятница, суббота, воскресенье'];
+let arrEng = ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'];
+let lang = prompt('Какой язык нужен?');
+if (lang==='ru') {
+console.log(...arrRus);
+} else if (lang==='en') {
+console.log(...arrEng);
 }
-multiply(266219);
+
+let namePerson;
+let a = namePerson === 'Артем' ? 'директор' : namePerson=== 'Максим' ? 'преподаватель' : 'студент';
+
